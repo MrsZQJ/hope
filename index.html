@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>门计算</title>
+    <link rel="stylesheet" href="./static/bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-3">
+            <label for="kuan">请输入宽</label>
+            <input type="number" class="form-control" id="kuan" placeholder="请输入宽">
+        </div>
+        <div class="col-md-3">
+            <label for="gao">请输入高</label>
+            <input type="gao" class="form-control" id="gao" placeholder="请输入高">
+        </div>
+        <!-- <div class="col-md-3">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+        <div class="col-md-3">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+        <div class="col-md-3">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+        <div class="col-md-3">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </div> -->
+        <div class="col-md-6">
+            <button type="button" onclick="jisuan()" class="btn btn-primary" style="margin-top: 25px;float: right;">点击计算</button>
+        </div>
+        <div class="card bg-success text-white" style="margin-top: 100px">
+            <div id="shuchu" class="card-body"></div>
+        </div>
+    </div>
+</body>
+<script src="./static/jquery-3.3.1.min.js"></script>
+<script src="./static/bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+<script>
+    function jisuan(){
+        console.log(11111);
+        
+        let kuan=$('#kuan').val()
+        let gao=$('#gao').val()
+        $('#shuchu').text(`本次计算结果为:${kuan*gao}`)
+    }
+</script>
+
+</html>
